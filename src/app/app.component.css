@@ -3,3 +3,9 @@ h1 {
   color: #09f;
   margin: o;
 }
+
+div {
+  max-width: 500px;
+  font-size: 32px;
+  margin: 0 auto;
+}

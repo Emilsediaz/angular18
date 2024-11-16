@@ -1,3 +1,21 @@
-<app-user />
+<div>
+<h1> Bienvenido a la era de Angular v18</h1>
+<article>
+  <p>La espera ha terminado. Angular v18, la última versión del popular framework de Google para desarrollo web, ha llegado para revolucionar la forma en que creamos aplicaciones web.
+  </p>
+     Con un enfoque claro en la optimización del rendimiento y la introducción de nuevas características que simplifican el desarrollo.
+  <p>Tradicionalmente, una librería llamada ZoneJS se ha encargado de activar la detección de cambios en Angular. Sin embargo, esta librería ha presentado ciertas desventajas en términos de rendimiento y experiencia de desarrollo.
+     Angular v18 introduce una nueva forma de activar la detección de cambios. En lugar de depender de ZoneJS para saber cuándo es posible que algo haya cambiado, Angular ahora puede programar una detección de cambios por sí mismo. Toma en cuenta que esto está en una etapa experiemental.
+     Para hacerlo, se agregó un nuevo programador al framework (llamado ChangeDetectionScheduler) y este programador se usa internamente para activar la detección de cambios. Este nuevo programador está habilitado de forma predeterminada en v18, incluso si usa ZoneJS. Sin embargo, el objetivo es alejarse progresivamente de ZoneJS y confiar únicamente en este nuevo planificador.
+     Con este nuevo programador, Angular ya no depende únicamente de ZoneJS para activar la detección de cambios. De hecho, el nuevo programador activa una detección de cambios cuando se activa un host o un escucha de plantilla, cuando se adjunta o elimina una vista, cuando una tubería asíncrona detecta una nueva emisión, cuando se llama al método markForCheck(), cuando se establece un valor de señal , etc. Lo hace llamando a ApplicationRef.tick()internamente.
+  </p>
+</article>
+@defer  {
+  <app-comments></app-comments>
+}
+
+</div>
+
+
 
 <!-- <router-outlet /> -->
