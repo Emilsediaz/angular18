@@ -10,8 +10,13 @@
      Con este nuevo programador, Angular ya no depende únicamente de ZoneJS para activar la detección de cambios. De hecho, el nuevo programador activa una detección de cambios cuando se activa un host o un escucha de plantilla, cuando se adjunta o elimina una vista, cuando una tubería asíncrona detecta una nueva emisión, cuando se llama al método markForCheck(), cuando se establece un valor de señal , etc. Lo hace llamando a ApplicationRef.tick()internamente.
   </p>
 </article>
-@defer  {
+
+@defer (on viewport) {
   <app-comments></app-comments>
+} @placeholder {
+  <p>Futuros comentarios</p>
+} @loading {
+  <p>Cargando comentarios...</p>
 }
 
 </div>
